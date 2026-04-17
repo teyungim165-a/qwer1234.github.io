@@ -644,10 +644,15 @@ footer {
         </div>
       </div>
       <div class="contact-right">
-        <div class="form-field"><label>이름</label><input type="text" placeholder="홍길동"></div>
-        <div class="form-field"><label>이메일</label><input type="email" placeholder="email@example.com"></div>
-        <div class="form-field"><label>메시지</label><textarea placeholder="안녕하세요. 메시지를 입력해 주세요..."></textarea></div>
-        <button class="form-submit">메시지 보내기</button>
+        <form action="https://formsubmit.co/teyungim165@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="새로운 문의가 도착했습니다">
+          <input type="hidden" name="_template" value="table">
+          <div class="form-field"><label for="name">이름</label><input id="name" name="name" type="text" placeholder="홍길동" required></div>
+          <div class="form-field"><label for="email">이메일</label><input id="email" name="email" type="email" placeholder="email@example.com" required></div>
+          <div class="form-field"><label for="message">메시지</label><textarea id="message" name="message" placeholder="안녕하세요. 메시지를 입력해 주세요..." required></textarea></div>
+          <button class="form-submit" type="submit">메시지 보내기</button>
+        </form>
       </div>
     </div>
   </div>
